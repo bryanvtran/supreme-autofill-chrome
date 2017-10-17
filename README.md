@@ -1,5 +1,5 @@
 # supreme-autofill-chrome
-Autofill Chrome extension for www.supremenewyork.com
+Checkout assistant for www.supremenewyork.com. Automatically fills out your billing and credit card information with one key.
 
 ## Disclaimers
 - I'm not responsible for any failures during checking out. 
