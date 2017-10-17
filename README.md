@@ -23,5 +23,5 @@ autofillOnClick('`', BILLING_INFO);
 - Save and reload!
 
 ## Issues
-Please submit issues in the GitHub.
+Please submit issues in the repo.
 
