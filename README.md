@@ -8,7 +8,7 @@ Checkout assistant for www.supremenewyork.com. Automatically fills out your bill
 
 ## General Usage
 - Updating billing info in info.js in a text editor (found in the js folder).
-- Open Chrome Extensions in settings ([here](chrome://extensions/)).
+- Open Chrome Extensions in settings.
 - Click on load unpacked extension and select the project folder. 
 - You're good to go! Just press the "`" key on the checkout page and your info will be filled out automatically.
 - You can also add multiple addresses and credit cards and map them to a different key to autofill. See below for details.
