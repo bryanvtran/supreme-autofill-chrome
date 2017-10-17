@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Supreme",
+  "description": "Checkout assistant for www.supremenewyork.com",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.supremenewyork.com/*",
+        "http://www.supremenewyork.com/*"
+      ],
+      "js": ["js/jquery.min.js", "js/info.js", "js/content.js"]
+    }
+  ],
+  "browser_action": {
+   "default_icon": "icon.png",
+   "default_popup": "popup.html"
+  },
+  "permissions": [
+   "activeTab",
+   "storage"
+   ]
+}
