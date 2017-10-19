@@ -10,7 +10,7 @@
         "https://www.supremenewyork.com/*",
         "http://www.supremenewyork.com/*"
       ],
-      "js": ["js/jquery.min.js", "js/info.js", "js/content.js"]
+      "js": ["js/content.js", "js/info.js"]
     }
   ],
   "browser_action": {

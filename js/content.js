@@ -8,7 +8,7 @@ function setSelectedValue(selectObj, valueToSet) {
 }
 
 function autofill(info) {
-  var inputs = document.querySelectorAll('input:not([type=submit])');
+  var inputs = document.querySelectorAll('input:not([type=submit]):not([type=hidden])');
   inputs.forEach(function(element) {
     // get the previous sibling, use that to find the field label
     var prev_sibling = element.previousElementSibling;
@@ -65,11 +65,9 @@ function autofill(info) {
 }
 
 function autofillOnClick(key, info) {
-  $(document).keypress(function(event) {
-    if (String.fromCharCode(event.which) == key) {
-      autofill(info)
+  document.addEventListener("keyup", function(e) {
+    if (e.key == key) {
+      autofill(info);
     }
   });
 }
-
-autofillOnClick('`', BILLING_INFO);

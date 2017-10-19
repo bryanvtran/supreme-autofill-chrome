@@ -13,4 +13,5 @@ var BILLING_INFO = {
     "exp_year": "2018", // 4 digits
     "cvv": "123"
 }
-  
+
+autofillOnClick('`', BILLING_INFO);

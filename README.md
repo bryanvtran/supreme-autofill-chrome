@@ -16,7 +16,7 @@ Checkout assistant for www.supremenewyork.com. Automatically fills out your bill
 - Make sure to reload the extension everytime you update your billing info. 
 
 ## Updating The Autofill Key
-- Open content.js in a text editor.
+- Open info.js in a text editor.
 - Replace the following text at the bottom with any key in the first argument or copy the line and add another key/billing info profile.
 ```
 autofillOnClick('`', BILLING_INFO);
