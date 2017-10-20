@@ -55,13 +55,12 @@ function autofill(info) {
     }
   })
 
-  // pressing checkbox
-  try {
-    var terms_btn = d.getElementById('order_terms').click();
-  }
-  catch(err) {
-    console.log("error filling out checkbox");
-  }
+  // pressing checkbox, may not show as checked
+  var checkbox = document.querySelector('#order_terms');
+  checkbox.checked = true;
+
+  // showing check
+  checkbox.parentElement.classList.add('checked');
 }
 
 function autofillOnClick(key, info) {
