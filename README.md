@@ -5,7 +5,7 @@ Checkout assistant for www.supremenewyork.com. Automatically fills out your bill
 - I'm not responsible for any failures during checking out. 
 - Always have your credit card info prepared in case any of the fields do not autofill.
 - This is just a basic Chrome extension for autofill. If there's enough interest, I may release a fully automated checkout extension. 
-- Confirmed working on 10/19/2017 release.
+- Confirmed working on 11/02/2017 release.
 
 ## General Usage
 - Make a copy of the info.sample.js file in the js folder and name it info.js.
