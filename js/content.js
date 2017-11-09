@@ -1,10 +1,18 @@
+function setInput(element, value) {
+  element.focus();
+  element.value = value;
+  element.blur();
+}
+
 function setSelectedValue(selectObj, valueToSet) {
-    for (var i = 0; i < selectObj.options.length; i++) {
-        if (selectObj.options[i].text== valueToSet) {
-            selectObj.options[i].selected = true;
-            return;
-        }
+  for (var i = 0; i < selectObj.options.length; i++) {
+    if (selectObj.options[i].text== valueToSet) {
+      selectObj.focus();
+      selectObj.options[i].selected = true;
+      selectObj.blur();
+      return;
     }
+  }
 }
 
 function autofill(info) {
@@ -19,7 +27,9 @@ function autofill(info) {
 
       // fill in info
       var value = info[label_text];
-      element.value = value;
+      if (value){
+        setInput(element, value);
+      }     
 
       // console.log(label_text, value);
     }
@@ -37,7 +47,10 @@ function autofill(info) {
       // check if prev sibling is a select
       if (prev_sibling.tagName.toLowerCase() === 'select') {
         var value = info['exp_year'];
-        setSelectedValue(element, value);
+        if (value) {
+          setSelectedValue(element, value);
+        } 
+        
       }
       else {
         var label_text = prev_sibling.innerHTML.toLowerCase();
@@ -48,7 +61,9 @@ function autofill(info) {
           var value = info[label_text];
         }
         // fill in info
-        setSelectedValue(element, value);
+        if (value) {
+          setSelectedValue(element, value);
+        } 
 
         //  console.log(label_text, value);
       }
